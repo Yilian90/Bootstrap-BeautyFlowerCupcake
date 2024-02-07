@@ -21,26 +21,42 @@
   color: #ffffff;
 }
 .head_text{
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
+  color: #696868;
+}
+.mt_30{
+  margin-top:30px;
 }
 .aboutus_box{
   background:  #696868;
   padding: 20px 30px;
   border-radius: 10px;
+  border: 1px solid transparent;
+  transition: .5s;
+  height: 100%;
 }
 
+.aboutus_box:hover{
+  border: 10px solid #696868;
+  transform: translateY(-30px);
+}
 .aboutus_box h2{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom:20px;
+  margin-bottom:20px 0 10px 0;
+}
+
+.aboutus_box p{
+  font-size: 14px;
+  line-height: 26px;
 }
 </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="./assets/logo.jpeg" width="45px"></a>
+        <a class="navbar-brand" href="#"><img src="./assets/logo.jpg" width="45px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,29 +80,29 @@
 
       <div class="aboutus_wrapper">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-12 text-center">
               <h2 class="head_text">My Stories</h2>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-9 col-10 mt_30">
               <div class="aboutus_box">
-                <span><img class="img-fluid" src="./assets/us1.jpg"></span>
+                <span><img class="img-fluid" src="./assets/hero4.jpg"></span>
                 <h2>Self Taught <br>Baker</h2>
                 <p>Beautifully detailed in the style of buttercream. Enjoy the delicious and gorgeous looks of a cupcake.</p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-9 col-10 mt_30">
               <div class="aboutus_box">
-                <span><img class="img-fluid" src="./assets/us2.jpg"></span>
+                <span><img class="img-fluid" src="./assets/hero5.jpg"></span>
                 <h2>Artist Specializing in Buttercream Flower</h2>
                 <p>Create truly works of art of buttercream flower, beautify and decorate your cupcake.</p>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-9 col-10 mt_30">
               <div class="aboutus_box">
-                <span><img class="img-fluid" src="./assets/us3.jpg"></span>
+                <span><img class="img-fluid" src="./assets/hero6.jpg"></span>
                 <h2>Create cupcake banquet with us</h2>
-                <p>create delicious and gorgeous flower for the unforgettable moment with your beloved one.</p>
+                <p>Create delicious and gorgeous flower for the unforgettable moment with your beloved one.</p>
               </div>
             </div>
           </div>  
