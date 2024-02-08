@@ -1,14 +1,60 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Service</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body{
+        background-color: rgb(244, 220, 227);
+      }
+      /* .first_col{
+        background-image: url('./assets/logo.jpg');
+        background-color: #696868;
+        height: 170px;
+        position: relative;
+        width: 550px;
+        left:100px;
+        top: 150px;
+        border-radius: 20px;
+        padding: 5px 5px; 
+      } */
+      .img-fluid{
+        background-color: #696868;
+        height: 170px;
+        position: relative;
+        width: 550px;
+        left:100px;
+        top: 30px;
+        border-radius: 20px;
+        padding: 10px 5px;
+        
+      }
+      .img-fluid:hover{
+        transform: translateY(-10px);
+      }
+      .last_row{
+        width: 60% !important;
+        position: relative;
+        left: 350px;
+        top: 50px;
+        height: 220px;
+        padding-bottom: 100px !important;
+        background-color: rgb(210, 156, 95);
+        border-radius: 20px;
+        color: white;
+      }
+      .last_row:hover{
+        border: 4px solid rgb(227, 137, 18);
+        transform: translateY(-10px);
+      }
+    </style>
   </head>
+  
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="./assets/logo.jpg" width="45px"></a>
@@ -33,7 +79,7 @@
         </div>
       </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -55,6 +101,35 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div> -->
+
+      <div class="container">
+        <div class="row py-5 g-3">
+          <div class="col-md-6 first_col">
+            <img src="./assets/service1.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/service2.jpg" class="img-fluid">
+            <br><br>
+       
+          </div>
+        </div>
+        <div class="last_row">
+          <div class="row row-cols-1 row-cols-3 p-3">
+            <div class="col">
+              <h4>DECORATION</h4>
+              <p>We offer variety of decorations to create wonderful environment to celebrate your precious day.</p>
+            </div>
+            <div class="col">
+              <h4>SOUVENIR</h4>
+              <p>We offer variety of souvenirs such us flower baloons, customized soaps and handkerchiefs.</p>
+            </div>
+            <div class="col">
+              <h4>BE OUR MEMBER</h4>
+              <p>Spend above rm888, free membership for whole life. Free mystery gift for every events with your membership.</p>
+            </div>
+          </div>
+        </div>
       </div>
       
     <!-- Optional JavaScript -->
