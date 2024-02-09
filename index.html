@@ -54,7 +54,9 @@ style="background-image: url('./assets/hero.jpg'); height: 50vh; background-size
         <div class="card-body">
           <h5 class="card-title">Gift-Flower cupcake</h5>
           <p class="card-text">Loving these flower bouquet cupcakes at the moment, so many colours to choose from, so pretty.<br />RM 150</p>
-          <a href="gift.html" class="btn btn-outline-primary">Category</a>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+            Order Now
+          </button> 
         </div>
       </div>
       <div class="card  ml-5 mt-5" style="width: 18rem;">
@@ -62,7 +64,9 @@ style="background-image: url('./assets/hero.jpg'); height: 50vh; background-size
         <div class="card-body">
           <h5 class="card-title">Birthday-Flower Cupcake</h5>
           <p class="card-text">How cute is this!The baby flowers was so special. This was a 2.5" traditional fondant covered lemon sponge with lemon curd and lemon buttercream.<br />RM 110</p>
-          <a href="birthday.html" class="btn btn-outline-primary">Category</a>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+            Order Now
+          </button> 
         </div>
       </div>
       <div class="card  ml-5 mt-5" style="width: 18rem;">
@@ -70,12 +74,73 @@ style="background-image: url('./assets/hero.jpg'); height: 50vh; background-size
         <div class="card-body">
           <h5 class="card-title">Wedding-Flower Cupcake</h5>
           <p class="card-text">Twelve cupcakes topped with handcrafted and painted fondant decorations. Sunflowers to symbolise a family connection.<br />RM 130</p>
-          <a href="wedding.html" class="btn btn-outline-primary">Category</a>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+            Order Now
+          </button> 
         </div>
       </div>
     </div>
 </div>
 </div>
+
+
+  <!--Shopping Cart-->
+  <div class="container">
+  </div>
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Your Shopping Cart
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Total</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="w-25">
+                  <img src="./assets/cupcake-bouquets.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td>Gift Cupcake</td>
+                <td>RM150</td>
+                <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+                <td>RM150</td>
+                <td>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fa fa-times"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table> 
+           
+          <div class="d-flex justify-content-end">
+            <h5>Total: <span class="price text-success">RM150</span></h5>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <div id="browse_app">
+            <a class="btn btn-large btn-info" href="checkout.html">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
